@@ -7,6 +7,10 @@
   "settings": {
     "editor.tabSize": 2,
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "eslint.options": {}
+  },
+  "extensions": {
+    "recommendations": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
   }
 }
