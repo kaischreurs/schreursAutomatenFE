@@ -1,1 +1,1 @@
-80 minutes
+120 minutes

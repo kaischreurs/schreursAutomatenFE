@@ -1,12 +1,12 @@
-import { router, BASE } from "../app";
-import { Router } from "@vaadin/router";
+import { router } from "../app";
 
 import "./pages/notfound-page";
+import "./pages/machine-page";
 
 router.setRoutes([
   {
-    path: `${BASE}/index`,
-    component: "index",
+    path: `/machine`,
+    component: "machine-page",
   },
   { path: "(.*)", component: "notfound-page" },
 ]);
