@@ -1,8 +1,18 @@
 import { LitElement, html, css } from "lit";
+import { property } from "lit/decorators.js";
+
+import { product } from "../pages/machine-page";
 
 export default class Product extends LitElement {
+  @property({ type: Object })
+  product!: product;
+
   constructor() {
     super();
+  }
+
+  connectedCallback(): void {
+    super.connectedCallback();
   }
 
   static get styles() {
@@ -19,7 +29,7 @@ export default class Product extends LitElement {
 
   render() {
     document.body.style.background = "white";
-    return html` <main></main> `;
+    return html` <main>${this.product.picture} ${this.product.name}</main> `;
   }
 }
 
