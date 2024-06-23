@@ -2,5 +2,10 @@
   "1": {
     "picture": "test.png",
     "name": "testProduct"
+  },
+
+  "2": {
+    "picture": "test2.png",
+    "name": "test2"
   }
 }

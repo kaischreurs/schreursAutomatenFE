@@ -2,9 +2,11 @@ import { LitElement, html, css } from "lit";
 
 import "../components/product-component";
 
-import machines from "../machines.json" assert { type: "json" };
+import machinesJson from "../machines.json" assert { type: "json" };
+import productsJson from "../products.json" assert { type: "json" };
 
 import { property } from "lit/decorators.js";
+import { Router } from "@vaadin/router";
 
 export interface product {
   picture: string;
@@ -15,14 +17,30 @@ interface machine {
   products: string[];
 }
 
+interface machines {
+  [index: string]: machine;
+}
+
+interface products {
+  [index: string]: product;
+}
+
 export default class Machine extends LitElement {
-  // @property({ attribute: false })
-  // machineId: string | null;
+  @property({ attribute: false })
+  products!: product[];
 
   constructor() {
     super();
     const urlParams = new URLSearchParams(window.location.search);
     let machineId = urlParams.get("id");
+    if (machineId == null) {
+      Router.go(".*");
+      return;
+    }
+    let machines: machines = machinesJson;
+    let machine: machine = machines[machineId];
+    let allProducts: products = productsJson;
+    this.products = machine.products.map((product) => allProducts[product]);
   }
 
   static get styles() {
@@ -42,8 +60,9 @@ export default class Machine extends LitElement {
     return html`
       <main>
         <h1 style="font-size: 150px;">machine</h1>
-        <product-component
-          product='{"id": "testId", "name": "test", "picture": "test.png"}' />
+        ${this.products.map(
+          (product) => html` <product-component product=${product} />`
+        )}
       </main>
     `;
   }
