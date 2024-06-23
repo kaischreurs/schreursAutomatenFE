@@ -1,1 +1,1 @@
-180 minutes
+220 minutes
