@@ -59,9 +59,9 @@ export default class Machine extends LitElement {
     document.body.style.background = "white";
     return html`
       <main>
-        <h1 style="font-size: 150px;">machine</h1>
         ${this.products.map(
-          (product) => html` <product-component product=${product} />`
+          (product) =>
+            html` <product-component product=${JSON.stringify(product)} />`
         )}
       </main>
     `;
