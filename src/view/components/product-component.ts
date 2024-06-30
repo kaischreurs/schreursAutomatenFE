@@ -25,6 +25,15 @@ export default class Product extends LitElement {
         flex-direction: column;
         font-size: 30px;
         margin: 5px;
+        height: 100px;
+      }
+
+      img-component {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 15%;
+        height: 100%;
       }
     `;
   }

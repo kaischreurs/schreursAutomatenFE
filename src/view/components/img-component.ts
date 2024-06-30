@@ -25,12 +25,15 @@ export default class Img extends LitElement {
         text-align: center;
         place-content: center;
         flex-direction: column;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
       }
     `;
   }
 
   render() {
-    return html` <main><img src=${this.imgUrl} /></main>`;
+    return html` <main style="background-image: url(${this.imgUrl});"></main>`;
   }
 }
 
