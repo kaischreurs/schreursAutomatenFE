@@ -11,6 +11,7 @@ import { Router } from "@vaadin/router";
 export interface product {
   picture: string;
   name: string;
+  price: string;
 }
 
 interface machine {

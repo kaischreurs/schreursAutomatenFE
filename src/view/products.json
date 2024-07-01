@@ -1,11 +1,13 @@
 {
   "1": {
     "picture": "cola.jpg",
-    "name": "testProduct"
+    "name": "testProduct",
+    "price": "3"
   },
 
   "2": {
     "picture": "cola.jpg",
-    "name": "test2"
+    "name": "proteïne reep",
+    "price": "3,25"
   }
 }

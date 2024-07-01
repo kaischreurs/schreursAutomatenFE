@@ -19,11 +19,10 @@ export default class Product extends LitElement {
         border: 1px solid black;
         border-radius: 20px;
         display: flex;
+        flex-direction: row;
         overflow: hidden;
-        text-align: center;
-        place-content: center;
-        flex-direction: column;
-        font-size: 30px;
+        text-align: left;
+        font-size: 25px;
         margin: 5px;
         height: 100px;
       }
@@ -32,8 +31,8 @@ export default class Product extends LitElement {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        width: 15%;
-        height: 100%;
+        width: 20%;
+        height: 80%;
       }
     `;
   }
@@ -42,7 +41,7 @@ export default class Product extends LitElement {
     return html`
       <main>
         <img-component img=${this.product.picture}></img-component>
-        ${this.product.name}
+        <div>${this.product.name} €${this.product.price}</div>
       </main>
     `;
   }
