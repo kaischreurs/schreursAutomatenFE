@@ -57,7 +57,6 @@ export default class Machine extends LitElement {
   }
 
   render() {
-    document.body.style.background = "white";
     return html`
       <main>
         ${this.products.map(

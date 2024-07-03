@@ -25,6 +25,7 @@ export default class Product extends LitElement {
         font-size: 25px;
         margin: 5px;
         height: 100px;
+        background-color: white;
       }
 
       img-component {
