@@ -14,7 +14,7 @@ export default class Img extends LitElement {
 
   connectedCallback(): void {
     super.connectedCallback();
-    this.imgUrl = new URL("../images/" + this.img, import.meta.url).href;
+    this.imgUrl = new URL("/" + this.img, import.meta.url).href;
   }
 
   static get styles() {
