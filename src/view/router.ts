@@ -9,5 +9,4 @@ router.setRoutes([
     path: `${BASE}/machine`,
     component: "machine-page",
   },
-  { path: "(.*)", component: "notfound-page" },
 ]);
