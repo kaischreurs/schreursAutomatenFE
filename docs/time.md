@@ -1,1 +1,1 @@
-665 minutes
+675 minutes
