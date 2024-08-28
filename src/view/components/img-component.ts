@@ -14,7 +14,6 @@ export default class Img extends LitElement {
 
   connectedCallback(): void {
     super.connectedCallback();
-    this.imgUrl = new URL("/" + this.img, import.meta.url).href;
   }
 
   static get styles() {
@@ -33,7 +32,7 @@ export default class Img extends LitElement {
   }
 
   render() {
-    return html` <main style="background-image: url(${this.imgUrl});"></main>`;
+    return html` <main style="background-image: url(./${this.img});"></main>`;
   }
 }
 

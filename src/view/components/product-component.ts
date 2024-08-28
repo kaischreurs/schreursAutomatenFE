@@ -42,7 +42,7 @@ export default class Product extends LitElement {
     return html`
       <main>
         <img-component img=${this.product.picture}></img-component>
-        <div>${this.product.name} €${this.product.price}</div>
+        <div>${this.product.name} ${this.product.price}</div>
       </main>
     `;
   }
