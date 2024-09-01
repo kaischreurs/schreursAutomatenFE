@@ -16,6 +16,7 @@ export interface product {
 
 interface machine {
   products: string[];
+  status: string;
 }
 
 interface machines {
@@ -35,11 +36,20 @@ export default class Machine extends LitElement {
     const urlParams = new URLSearchParams(window.location.search);
     let machineId = urlParams.get("id");
     if (machineId == null) {
+      console.log("test");
       Router.go(".*");
       return;
     }
     let machines: machines = machinesJson;
     let machine: machine = machines[machineId];
+    if (machine == null) {
+      Router.go(".*");
+      return;
+    }
+    if (machine.status === "progress") {
+      Router.go("/progress");
+      return;
+    }
     let allProducts: products = productsJson;
     this.products = machine.products.map((product) => allProducts[product]);
   }

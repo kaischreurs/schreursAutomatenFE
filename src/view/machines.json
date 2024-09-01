@@ -1,5 +1,6 @@
 {
   "1": {
-    "products": ["1", "2"]
+    "products": ["1", "2"],
+    "status": "progress"
   }
 }

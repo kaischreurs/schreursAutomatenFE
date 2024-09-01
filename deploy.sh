@@ -5,7 +5,6 @@ DEPLOY_FOLDER="dist"
 GIT_COMMIT_MESSAGE="New build for deploy: "$(date)
 GIT_BRANCH_LOCAL="deploy"
 GIT_BRANCH_REMOTE="gh-pages"
-#GIT_REPO_REMOTE="https://github.com/<Organisation>/<Project>.git"
 GIT_REPO_REMOTE="https://github.com/kaischreurs/schreursAutomatenFE.git"
 
 # abort on errors

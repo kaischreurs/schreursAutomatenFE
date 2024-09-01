@@ -1,1 +1,1 @@
-735 minutes
+800 minutes
