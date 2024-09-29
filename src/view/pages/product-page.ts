@@ -3,9 +3,12 @@ import { LitElement, html, css } from "lit";
 import productsJson from "../products.json" assert { type: "json" };
 import { Router } from "@vaadin/router";
 import { products, product } from "./machine-page";
+import { state } from "lit/decorators.js";
 
 export default class Product extends LitElement {
   productId: string | null | undefined;
+  @state()
+  product: product | null | undefined;
   constructor() {
     super();
   }
@@ -14,14 +17,13 @@ export default class Product extends LitElement {
     super.connectedCallback();
     const urlParams = new URLSearchParams(window.location.search);
     this.productId = urlParams.get("id");
-    console.log(this.productId);
     if (this.productId == null) {
       Router.go(".*");
       return;
     }
     let products: products = productsJson;
-    let product: product = products[this.productId];
-    if (product == null) {
+    this.product = products[this.productId];
+    if (this.product == null) {
       Router.go(".*");
       return;
     }
@@ -36,12 +38,28 @@ export default class Product extends LitElement {
         text-align: center;
         place-content: center;
         flex-direction: column;
+        height: 100vh;
+      }
+      .img {
+        height: 200px;
+        width: auto;
+        flex: 1;
+      }
+      img {
+        max-width: 100%;
+        max-height: 100%;
       }
     `;
   }
 
   render() {
-    return html` <main>${this.productId}</main> `;
+    return html`
+      <main>
+        <div class="img"><img src="../${this.product?.picture}" /></div>
+        <br />
+        hello
+      </main>
+    `;
   }
 }
 
