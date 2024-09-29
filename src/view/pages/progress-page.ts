@@ -9,7 +9,6 @@ export default class Progress extends LitElement {
     return css`
       main {
         display: flex;
-        overflow: hidden;
         height: calc(100vh - 96px);
         text-align: center;
         color: #000000;

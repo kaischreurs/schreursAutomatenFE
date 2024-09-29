@@ -2,12 +2,60 @@
   "1": {
     "picture": "cola.jpg",
     "name": "testProduct",
-    "price": "3"
+    "price": "?"
   },
 
   "2": {
     "picture": "cola.jpg",
     "name": "proteïne reep",
-    "price": "3,25"
+    "price": "?"
+  },
+
+  "3": {
+    "picture": "coconaut.jpg",
+    "name": "Coconaut",
+    "price": "?"
+  },
+
+  "4": {
+    "picture": "Nightwatch.jpg",
+    "name": "Nightwatch",
+    "price": "?"
+  },
+
+  "5": {
+    "picture": "Zooki.jpg",
+    "name": "Zooki",
+    "price": "?"
+  },
+
+  "6": {
+    "picture": "Roobar.jpg",
+    "name": "Roobar",
+    "price": "?"
+  },
+
+  "7": {
+    "picture": "Sunwarrior.jpg",
+    "name": "Sunwarrior proteïne",
+    "price": "?"
+  },
+
+  "8": {
+    "picture": "Barbarian.jpg",
+    "name": "The Barbarian",
+    "price": "?"
+  },
+
+  "9": {
+    "picture": "sesamisbars.jpg",
+    "name": "Sesamis natural bars",
+    "price": "?"
+  },
+
+  "10": {
+    "picture": "prodigy.png",
+    "name": "Prodigy",
+    "price": "?"
   }
 }

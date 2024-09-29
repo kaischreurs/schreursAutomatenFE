@@ -58,7 +58,8 @@ export default class Machine extends LitElement {
     return css`
       main {
         display: flex;
-        overflow: hidden;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
         text-align: center;
         place-content: center;
         flex-direction: column;

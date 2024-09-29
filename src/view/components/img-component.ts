@@ -20,19 +20,20 @@ export default class Img extends LitElement {
     return css`
       main {
         display: flex;
-        overflow: hidden;
+
         text-align: center;
         place-content: center;
         flex-direction: column;
         height: 100%;
         background-size: contain;
         background-repeat: no-repeat;
+        background-position: center;
       }
     `;
   }
 
   render() {
-    return html` <main style="background-image: url(./${this.img});"></main>`;
+    return html` <main style="background-image: url(../${this.img});"></main>`;
   }
 }
 

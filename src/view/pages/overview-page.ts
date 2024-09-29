@@ -9,7 +9,6 @@ export default class OverView extends LitElement {
     return css`
       main {
         display: flex;
-        overflow: hidden;
         height: calc(100vh - 96px);
         text-align: center;
         color: #00ad00;

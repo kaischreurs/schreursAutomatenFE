@@ -20,7 +20,6 @@ export default class Product extends LitElement {
         border-radius: 20px;
         display: flex;
         flex-direction: row;
-        overflow: hidden;
         text-align: left;
         font-size: 25px;
         margin: 5px;
@@ -34,6 +33,8 @@ export default class Product extends LitElement {
         transform: translateY(-50%);
         width: 20%;
         height: 80%;
+        margin-left: 10px;
+        margin-right: 10px;
       }
     `;
   }
