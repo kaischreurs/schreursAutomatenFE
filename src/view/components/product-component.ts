@@ -4,6 +4,7 @@ import { property } from "lit/decorators.js";
 import "./img-component";
 
 import { product } from "../pages/machine-page";
+import { Router } from "@vaadin/router";
 
 export default class Product extends LitElement {
   @property({ type: Object })
@@ -11,6 +12,10 @@ export default class Product extends LitElement {
 
   constructor() {
     super();
+  }
+
+  clickhandler() {
+    Router.go(`/product?id=${this.product.id}`);
   }
 
   static get styles() {
@@ -36,6 +41,12 @@ export default class Product extends LitElement {
         margin-left: 10px;
         margin-right: 10px;
       }
+      a {
+        font-weight: 500;
+        color: #646cff;
+        text-decoration: inherit;
+        font-size: 20px;
+      }
     `;
   }
 
@@ -43,7 +54,11 @@ export default class Product extends LitElement {
     return html`
       <main>
         <img-component img=${this.product.picture}></img-component>
-        <div>${this.product.name} ${this.product.price}</div>
+        <div>
+          ${this.product.name}
+          <br />
+          <a @click=${this.clickhandler}>beschrijving</a>
+        </div>
       </main>
     `;
   }

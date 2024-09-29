@@ -12,6 +12,7 @@ export interface product {
   picture: string;
   name: string;
   price: string;
+  id: string;
 }
 
 interface machine {
@@ -23,7 +24,7 @@ interface machines {
   [index: string]: machine;
 }
 
-interface products {
+export interface products {
   [index: string]: product;
 }
 
@@ -36,7 +37,6 @@ export default class Machine extends LitElement {
     const urlParams = new URLSearchParams(window.location.search);
     let machineId = urlParams.get("id");
     if (machineId == null) {
-      console.log("test");
       Router.go(".*");
       return;
     }
