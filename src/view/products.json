@@ -3,69 +3,79 @@
     "id": "1",
     "picture": "cola.jpg",
     "name": "testProduct",
-    "price": "?"
+    "price": "?",
+    "description": ""
   },
 
   "2": {
     "id": "2",
     "picture": "cola.jpg",
     "name": "proteïne reep",
-    "price": "?"
+    "price": "?",
+    "description": ""
   },
 
   "3": {
     "id": "3",
     "picture": "coconaut.jpg",
     "name": "Coconaut",
-    "price": "?"
+    "price": "?",
+    "description": "Coconaut is een natuurlijke isotone drank, het verfrist, activeert en regenereert tegelijk! Het heeft een frisse smaak zit boordevol vitamines, enzymen,antioxidanten en voedingsstoffen. Voor consumenten die waarde hechten aan gezondheid en kwaliteit! Verpakkingen zijn milieuvriendelijk en recyclebaar."
   },
 
   "4": {
     "id": "4",
     "picture": "Nightwatch.jpg",
     "name": "Nightwatch",
-    "price": "?"
+    "price": "?",
+    "description": "Nightwatch is een 100% plantaardige energydrank voor focus en kracht, gemaakt van guayusa (gwhy-you-sa). Guayusa is een superblad dat gevonden wordt in de Amazonewouden van Ecuador. Waarom is guayusa beter dan traditionele cafeïne houdende energiedrankjes? De guayusa plant zorgt voor focus en kracht dankzij het hoge natuurlijke cafeïnegehalte, waardoor je extreme energie krijgt, zonder pieken of dalen."
   },
 
   "5": {
     "id": "5",
     "picture": "Zooki.jpg",
     "name": "Zooki",
-    "price": "?"
+    "price": "?",
+    "description": "De producten van Zooki zijn Veganistisch, Suikervrij, Alcoholvrij, Glutenvrij, Sojavrij, Zuivelvrij en Non-gmo. Zooki is volledig natuurlijk, het kan onder anderen worden ingenomen door diabetici en zwangere vrouwen! Geweldig smakende voedingsstoffen, in effectieve doses, geleverd op een manier die je echt opneemt. Een stralende huid, betere prestaties, een natuurlijk hoog energieniveau en gezonde gewrichten!"
   },
 
   "6": {
     "id": "6",
     "picture": "Roobar.jpg",
     "name": "Roobar",
-    "price": "?"
+    "price": "?",
+    "description": "De repen van roobar zijn gemaakt van fruit en zijn helemaal Glutenvrij, Tarwevrij, Lactosevrij, Koemelkvrij, Kippeneivrij, Sojavrij, Gistvrij, Pindavrij, Sesamvrij, Lupinevrij, Maisvrij, Selderijvrij en Zonder Toegevoegd Suiker. Buiten dat smaken ze heerlijk en geven ze je gezonde energie."
   },
 
   "7": {
     "id": "7",
     "picture": "Sunwarrior.jpg",
     "name": "Sunwarrior proteïne",
-    "price": "?"
+    "price": "?",
+    "description": "Sunwarrior proteïne is schoon en volledig vrij van gluten, kunstmatige stoffen, soja, gist, tarwe of toegevoegde suikers. Het plantaardige eiwitpoeder bevat een volledig aminozuurprofiel, MCT&#39;s (Medium Chain Triglycerides) en BCAA&#39;s (Branched Chain Amino Acids). Sunwarrior proteïne poeder is ideaal voor gebruik in smoothies, shakes, water of andere dranken."
   },
 
   "8": {
     "id": "8",
     "picture": "Barbarian.jpg",
     "name": "The Barbarian",
-    "price": "?"
+    "price": "?",
+    "description": "The Barbarian: Twee jaar optimalisatie van het proces leverde de beste plantaardige proteïnerepen op. Lekkere, zachte en smaakvolle repen met 25-30% plantaardig eiwit. Een ideale keuze voor een snack/ ontbijt, omdat het uiterst smakelijk is en het lichaam voorziet van energie en waardevolle voedingsstoffen."
   },
 
   "9": {
     "id": "9",
     "picture": "sesamisbars.jpg",
     "name": "Sesamis natural bars",
-    "price": "?"
+    "price": "?",
+    "description": "Sesamis natural bars zijn biologische gezondheidsrepen gemaakt van gecertificeerde grondstoffen van uitstekende kwaliteit. Het productieproces ondergaat de minimale interventie, waardoor het superieure behouden blijft. Ze bevatten geen conserveringsmiddelen, additieven, gluten, GMO, soja of kunstmatige zoetstoffen."
   },
 
   "10": {
     "id": "10",
     "picture": "prodigy.png",
     "name": "Prodigy",
-    "price": "?"
+    "price": "?",
+    "description": "Prodigy: waar de rijkdom van chocolade wordt gecombineerd met de voordelen van natuurlijke, plantaardige ingrediënten. Vrij van palmolie, geraffineerde suiker, 100% veganistisch en zuivelvrij, arm aan natuurlijke suikers en verpakt in milieuvriendelijke, composteerbare materialen."
   }
 }

@@ -36,14 +36,19 @@ export default class Product extends LitElement {
         -ms-overflow-style: none;
         scrollbar-width: none;
         text-align: center;
-        place-content: center;
         flex-direction: column;
         height: 100vh;
+        font-size: 1.5em;
       }
       .img {
-        height: 200px;
+        height: 250px;
         width: auto;
-        flex: 1;
+        margin: 20px;
+        margin-bottom: 0;
+      }
+      .description {
+        margin: 10px;
+        margin-top: 0;
       }
       img {
         max-width: 100%;
@@ -57,7 +62,7 @@ export default class Product extends LitElement {
       <main>
         <div class="img"><img src="../${this.product?.picture}" /></div>
         <br />
-        hello
+        <div class="description">${this.product?.description}</div>
       </main>
     `;
   }
