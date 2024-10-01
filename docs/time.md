@@ -1,1 +1,1 @@
-900 minutes
+930 minutes
