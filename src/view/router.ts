@@ -5,6 +5,8 @@ import "./pages/machine-page";
 import "./pages/overview-page";
 import "./pages/progress-page";
 import "./pages/product-page";
+import "./pages/nav-page";
+import "./pages/contact-page";
 
 router.setRoutes([
   { path: `/`, component: "overview-page" },
@@ -15,6 +17,14 @@ router.setRoutes([
   {
     path: `/product`,
     component: "product-page",
+  },
+  {
+    path: "/contact",
+    component: "contact-page",
+  },
+  {
+    path: "/nav",
+    component: "nav-page",
   },
   {
     path: "/progress",
