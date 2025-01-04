@@ -40,6 +40,9 @@ export default class Product extends LitElement {
         height: 100vh;
         font-size: 1.5em;
       }
+      .name {
+        font-size: 2em;
+      }
       .img {
         height: 250px;
         width: auto;
@@ -60,6 +63,7 @@ export default class Product extends LitElement {
   render() {
     return html`
       <main>
+        <div class="name">${this.product?.name}</div>
         <div class="img"><img src="../${this.product?.picture}" /></div>
         <br />
         <div class="description">${this.product?.description}</div>

@@ -52,12 +52,12 @@ export default class Product extends LitElement {
 
   render() {
     return html`
-      <main>
+      <main @click=${this.clickhandler}>
         <img-component img=${this.product.picture}></img-component>
         <div>
           ${this.product.name}
           <br />
-          <a @click=${this.clickhandler}>beschrijving</a>
+          <a>beschrijving</a>
         </div>
       </main>
     `;
