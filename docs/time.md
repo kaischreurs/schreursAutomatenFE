@@ -1,1 +1,1 @@
-990 minutes
+1050 minutes

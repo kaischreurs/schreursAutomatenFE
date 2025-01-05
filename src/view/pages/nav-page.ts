@@ -28,6 +28,8 @@ export default class Nav extends LitElement {
         height: 100px;
         line-height: 90px;
         background-color: white;
+        color: black;
+        text-decoration: none;
       }
     `;
   }
@@ -35,9 +37,8 @@ export default class Nav extends LitElement {
   render() {
     return html`
       <main>
-        <div class="navItem" @click=${() => this.clickhandler("/contact")}>
-          Contactgegevens
-        </div>
+        <a href="/contact" class="navItem"> Contactgegevens </a>
+        <a href="/automaat" class="navItem"> Product informatie </a>
       </main>
     `;
   }

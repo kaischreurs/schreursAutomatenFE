@@ -37,10 +37,16 @@ export default class Machine extends LitElement {
     super();
     const urlParams = new URLSearchParams(window.location.search);
     let machineId = urlParams.get("id");
+
     if (machineId == null) {
-      Router.go(".*");
-      return;
+      machineId = localStorage.getItem("machineId");
+      if (machineId == null) {
+        Router.go(".*");
+        return;
+      }
     }
+
+    localStorage.setItem("machineId", machineId);
     let machines: machines = machinesJson;
     let machine: machine = machines[machineId];
     if (machine == null) {
@@ -53,6 +59,16 @@ export default class Machine extends LitElement {
     }
     let allProducts: products = productsJson;
     this.products = machine.products.map((product) => allProducts[product]);
+  }
+
+  connectedCallback(): void {
+    super.connectedCallback();
+    const urlParams = new URLSearchParams(window.location.search);
+    let machineId = urlParams.get("id");
+    if (machineId == null) {
+      urlParams.set("id", localStorage.getItem("machineId")!);
+      window.location.search = urlParams.toString();
+    }
   }
 
   static get styles() {

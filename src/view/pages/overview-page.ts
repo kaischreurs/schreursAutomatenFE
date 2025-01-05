@@ -19,7 +19,7 @@ export default class OverView extends LitElement {
   }
 
   render() {
-    return html` <main>test</main> `;
+    return html` <main></main> `;
   }
 }
 
